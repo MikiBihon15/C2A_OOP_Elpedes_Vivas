@@ -1,0 +1,67 @@
+Intro/Scenario 
+
+ParkPal - Parking application for students/staff that's interactive to the users who're using it. Finding a parking space within the campus can be time-consuming and frustrating, during peak hours when most spots are occupied. To solve this problem, ParkPal is designed as an interactive parking application for students and staff. It provides a real-time aerial view of the campus parking area, showing available and occupied spots.
+
+
+
+Features/Use Cases
+
+* \- Shows real-time map of the parking map with aerial view of the spots.
+* \- Users can claim or mark a spot if they ever plan to park.
+* \- Occupied (red) Unoccupied (green)
+* Users can unclaim a parking spot after they leave updating the map.
+* Only the authorized students and staff can access the app having a login system.
+
+
+
+Structure
+
+Platform
+
+* Mobile application
+
+
+
+Updating method
+
+* Sensors or manual user input to update parking status
+
+
+
+User interface
+
+* Aerial view of the campus parking area
+* Color green and red for available and occupied spots
+
+
+
+Access
+
+* Login using students email or staff account
+
+
+
+Core functions
+
+* View available parking spot
+* Claim or release a parking spot
+
+
+
+Systems output
+
+* Provides accurate real-time parking information
+
+
+
+How it will be implemented
+
+* Implemented as a mobile app with real-time database
+* Uses sensors or manual inputs to update parking status 
+* Features an aerial interface
+* Users are login through their student or staff account
+* Allows users to view, claim, and release parking spots
+* Ensures accurate and live parking information for users
+
+
+
