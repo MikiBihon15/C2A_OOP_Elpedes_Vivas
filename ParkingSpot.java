@@ -1,0 +1,13 @@
+class ParkingSpot {
+    private String spotId;
+    private boolean isOccupied;
+
+    public ParkingSpot(String spotId) {
+        this.spotId = spotId;
+        this.isOccupied = false;
+    }
+
+    public String getSpotId() { return spotId; }
+    public boolean isOccupied() { return isOccupied; }
+    public void setOccupied(boolean occupied) { this.isOccupied = occupied; }
+}
