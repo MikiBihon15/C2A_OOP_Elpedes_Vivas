@@ -1,0 +1,7 @@
+class SensorUpdater extends ParkingStatusUpdater {
+    @Override
+    public void updateStatus(ParkingSpot spot) {
+        spot.setOccupied(true);
+        System.out.println("Sensor detected a vehicle in spot " + spot.getSpotId());
+    }
+}
