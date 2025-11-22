@@ -109,3 +109,24 @@ public class ParkPalApp {
         System.out.println("Invalid spot.");
     }
 
+    // Releasing of spot
+    public static void releaseSpot() {
+        System.out.print("Enter spot ID to release: ");
+        String spotId = scanner.next();
+
+        for (ParkingSpot spot : spots) {
+            if (spot.getSpotId().equalsIgnoreCase(spotId)) {
+                if (!spot.isOccupied()) {
+                    System.out.println("Spot is already available!");
+                } else {
+                    ParkingStatusUpdater updater = new ManualUpdater(); 
+                    updater.updateStatus(spot);
+                    System.out.println("You released spot " + spotId + "!");
+                }
+                return;
+            }
+        }
+        System.out.println("Invalid spot.");
+    }
+}
+
