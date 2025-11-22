@@ -43,3 +43,40 @@ public class ParkPalApp {
 
         } while (choice != 4);
     }
+
+    // email
+    public static String inputValidEmail() {
+        String email;
+        while (true) {
+            System.out.print("Enter email: ");
+            email = scanner.nextLine();
+            if (email.contains("@")) break;
+            System.out.println("Invalid email! Must contain '@'. Try again.");
+        }
+        return email;
+    }
+    
+       // role
+    public static String inputValidRole() {
+        String role;
+        while (true) {
+            System.out.print("Enter role (Student/Staff): ");
+            role = scanner.nextLine();
+            if (role.equalsIgnoreCase("Student") || role.equalsIgnoreCase("Staff")) break;
+            System.out.println("Invalid role! Type Student or Staff.");
+        }
+        return role;
+    }
+
+     // ID valid
+    public static String inputValidId() {
+        String id;
+        while (true) {
+            System.out.print("Enter 10-digit ID number: ");
+            id = scanner.nextLine();
+            if (id.matches("\\d{10}")) break;  // regex = 10 digits
+            System.out.println("Invalid ID! It must be EXACTLY 10 digits. Try again.");
+        }
+        return id;
+    }
+
