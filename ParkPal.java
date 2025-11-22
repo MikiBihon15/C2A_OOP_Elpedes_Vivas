@@ -74,9 +74,38 @@ public class ParkPalApp {
         while (true) {
             System.out.print("Enter 10-digit ID number: ");
             id = scanner.nextLine();
-            if (id.matches("\\d{10}")) break;  // regex = 10 digits
+            if (id.matches("\\d{10}")) break;  
             System.out.println("Invalid ID! It must be EXACTLY 10 digits. Try again.");
         }
         return id;
+    }
+
+     public static void viewSpots() {
+        System.out.println("\n--- Aerial Parking View ---");
+        for (ParkingSpot spot : spots) {
+            String status = spot.isOccupied() ? "\u001B[31mOCCUPIED (RED)\u001B[0m"   
+                                              : "\u001B[32mAVAILABLE (GREEN)\u001B[0m"; 
+            System.out.println("Spot " + spot.getSpotId() + " → " + status);
+        }
+    }
+
+    // Claiming of parking spot
+    public static void claimSpot() {
+        System.out.print("Enter spot ID to claim: ");
+        String spotId = scanner.next();
+
+        for (ParkingSpot spot : spots) {
+            if (spot.getSpotId().equalsIgnoreCase(spotId)) {
+                if (spot.isOccupied()) {
+                    System.out.println("Spot is already occupied!");
+                } else {
+                    ParkingStatusUpdater updater = new SensorUpdater(); 
+                    updater.updateStatus(spot);
+                    System.out.println("You claimed spot " + spotId + "!");
+                }
+                return;
+            }
+        }
+        System.out.println("Invalid spot.");
     }
 
