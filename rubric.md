@@ -8,7 +8,7 @@
 
 ### 1. Class Diagram Completeness (25%)
 **Score:** 5/5
-**Notes:** Complete UML diagram available via Figma link (https://www.figma.com/board/qjCDLyihtXJ7l3mYFezTR9/ParkPal-UML). The documentation clearly describes the system architecture with User authentication, ParkingSpot management, and ParkingStatusUpdater pattern. System shows thoughtful design with sensor-based and manual update mechanisms.
+**Notes:** Complete UML diagram provided via Figma, now available as uml.png. The diagram clearly shows the system architecture with proper UML notation including User, ParkPal (main system), ParkingSpot, Vehicle, ManualInput, and RealTimeDatabase classes. All classes display attributes with types and access modifiers, methods with return types, and clear composition/association relationships. System shows thoughtful design with real-time database integration and manual input mechanisms for parking management.
 
 ### 2. Java Program - OOP Concepts (50%)
 **Score:** 4/5
