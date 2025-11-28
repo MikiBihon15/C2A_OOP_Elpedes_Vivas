@@ -28,6 +28,19 @@
 
 ---
 
-## Final Grade: 88/100
+### 5. Extra Points (up to 6)
+
+**Features:** 1/5
+- Console experience
+
+**Code Quality:** 1.0/1.0
+- Variable naming: 0.5/0.5
+- Code organization: 0.5/0.5
+
+**Extra Points Total:** +2.0
+
+---
+
+## Final Grade: 88 + 2.0 = **90/100**
 
 *Assessment generated based on project analysis.*
